@@ -77,8 +77,8 @@ int main()
         {
             if((MatC_tb[i][j].real != MatC_expected[i][j].real) || (MatC_tb[i][j].imag != MatC_expected[i][j].imag)) 
             {
-                printf("Mismatch at MatC[%d][%d]: Expected: (%hi + %hij) \t Actual: (%hi + %hij)\n", i, j, MatC_expected[i][j].real, MatC_expected[i][j].imag, MatC_tb[i][j].real, MatC_tb[i][j].imag);
-                passed = 0;
+	      std::cout<<"Mismatch at MatC["<<i<<"]["<<j<<"]: Expected: "<< MatC_expected[i][j].real<<","<< MatC_expected[i][j].imag <<" Actual: "<<  MatC_tb[i][j].real<<","<<MatC_tb[i][j].imag<<std::endl;
+	      passed = 0;
             }
         }
     }

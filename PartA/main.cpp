@@ -59,8 +59,7 @@ int main()
     for(int i = 0; i < M; i++) {
         for(int j = 0; j < K; j++) {
             if(MatC_tb[i][j] != MatC_expected[i][j]) {
-                printf("Mismatch at MatC[%d][%d]: Expected: %hi \t Actual: %hi\n", 
-                        i, j, MatC_expected[i][j], MatC_tb[i][j]);
+	      std::cout<<"Mismatch at MatC["<<i<<"]["<<j<<"]: Expected: "<< MatC_expected[i][j] <<" Actual: "<<  MatC_tb[i][j]<<std::endl;
                 passed = 0;
             }
         }

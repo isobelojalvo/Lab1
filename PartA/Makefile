@@ -1,4 +1,4 @@
-AUTOPILOT_ROOT := /opt/Xilinx/Vitis/2022.1
+AUTOPILOT_ROOT := /opt/Xilinx/Vivado/2019.1
 
 ASSEMBLE_SRC_ROOT := .
 IFLAG += -I "${AUTOPILOT_ROOT}/include"
